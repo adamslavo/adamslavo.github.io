@@ -403,6 +403,10 @@ form button {
 		padding: 1rem;
 	}
 
+	.features-header {
+		padding-top: 8rem;
+	}
+
 	.introducing h1 {
 		font-size: 2.5rem;
 	}
