@@ -60,7 +60,9 @@ nav ul {
 	color: #767676;
 	margin-right: 2rem;
 	padding: 1rem;
-	font-family: 'Montserrat', sans-serif;}
+	font-family: 'Montserrat', sans-serif;
+	border: 1px solid transparent;
+}
 
 .header-intro {
 	background-image: url(../img/top-bg.jpeg);
