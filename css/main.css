@@ -226,7 +226,7 @@ main {
 	color: #767676;
 }
 
-.map img {
+.map iframe {
 	border: 5px #fff solid;
 	box-shadow: 0px 1px 10px grey;
 	width: 100%;
