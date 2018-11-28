@@ -22,14 +22,19 @@ header {
 
 .wrap-header {
 	display: flex;
-	width: 100%;
 	justify-content: space-between;
 	padding-bottom: 1rem;
+	border: 2px red solid;	
+}
+
+.nav-bar {
+	border: 1px red solid;
 }
 
 .logo-section {
 	margin-left: 2rem;
 	margin-top: 2.3rem;
+	border: 1px red solid;
 }
 
 .logo {
@@ -41,7 +46,7 @@ header {
 nav ul {
 	vertical-align: middle;
 	padding-top: 2rem;
-
+	border: 1px red solid;
 }
 .nav-link:hover {
 	color: black;
@@ -206,6 +211,7 @@ main {
 	text-transform: uppercase;
 	font-size: 1rem;
 	padding-top: 1rem;
+
 }
 
 .footer-main {
@@ -213,6 +219,7 @@ main {
 	justify-content: space-around;
 	padding-top: 2rem;
 	padding-bottom: 3rem;
+	border: 1px red solid;
 }
 
 .map {
@@ -415,12 +422,3 @@ form button {
 		height: 330px;
 	}
 }
-
-
-
-
-
-
-
-
-
