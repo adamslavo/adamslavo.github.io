@@ -6,7 +6,6 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
@@ -18,7 +17,7 @@
             </div>
             <nav>
                 <ul class="nav-items">
-                    <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+                    <li class="nav-item"><a href="#features-header" class="nav-link">Work</a></li>
                     <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
                     <li class="nav-item"><a href="#footer-header" class="nav-link">Contact</a></li>
                 </ul>
@@ -35,24 +34,23 @@
         </div>
     </header>
     <main>
-        <div class="features-header">
+        <div class="features-header" id="features-header">
             <h1>Featured Work</h1>
             <hr size="3px"  color="black" class="featured-hr">
             <p>Here you can find some of our latest works, to see the details of these works<br>just click to the thumbnails below.</p>
         </div>
         <div class="work" id="work">
             <div class="works">
-                <img src="img/box1.png" alt="">
-                <img src="img/box1.png" alt="">
-                <img src="img/box4.png" alt="">
-                <img src="img/box5.png" alt="">
-                <img src="img/box6.png" alt="">
-                <img src="img/box7.png" alt="">
-                <img src="img/box3.png" alt="">
-                <img src="img/box8.png" alt="">
-                <img src="img/box9.png" alt="">
+                <img src="img/box1.png" alt="works">
+                <img src="img/box1.png" alt="works">
+                <img src="img/box4.png" alt="works">
+                <img src="img/box5.png" alt="works">
+                <img src="img/box6.png" alt="works">
+                <img src="img/box7.png" alt="works">
+                <img src="img/box3.png" alt="works">
+                <img src="img/box8.png" alt="works">
+                <img src="img/box9.png" alt="works">
             </div>
-            
         </div>
         <div class="team" id="team">
             <div class="team-text">
@@ -95,20 +93,20 @@
                 <iframe src="https://yandex.ru/map-widget/v1/-/CBFnRGSUCA" width="400" height="310" frameborder="1" allowfullscreen="true"></iframe>
             </div>
             <div class="contact-form">
-                <p>Want to contact us now?Just drop us a line below. </p>
-                <form action="">
-                    <input class="message" type="text" placeholder="Leave us message..." required>
-                    <input class="email-place" type="text" placeholder="youremail@mail.com" required>
-                    <button class="submit-btn" type="submit">Send</button>
-                </form>
+                <p>Want to contact us now? Just drop us a line below. </p>
+                <form action="https://formspree.io/adamslavo@icloud.com" method="POST">
+                    <input class="message" type="text" name="name" placeholder="message" required>
+                    <input class="email-place" type="email" name="_replyto" placeholder="your email" required>
+                    <input class="submit-btn" type="submit" value="Send">
+                  </form>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="adress">
-                <p>Ahmet Bayman sitesi</p>
+                <p>Portfolio Site</p>
             </div>
             <div class="copyright">
-                <p>Copyright 2013 Limbo</p>
+                <p>Copyright</p>
             </div>
         </div>
     </footer>

@@ -1,6 +1,40 @@
-* {
-	box-sizing: border-box;
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em auto;
+    padding: 0;
 }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
 
 body {
 	margin: 0;
@@ -65,10 +99,10 @@ nav ul {
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
+	height: 617px;
 	z-index: -999;
 	align-items: center;
 	text-align: center;
-	padding-bottom: 5rem;
 }
 
 .introducing {
@@ -172,13 +206,13 @@ main {
 }
 
 .developer {
-	background-color: #fff;
-	padding: 2rem;
-	margin: 2rem;
+	background-color: #fff;	
 	box-shadow: 2px;
 	box-shadow: 0px 3px 30px grey;
 	width: 100%;
-	max-width: 210px;
+	max-width: 220px;
+	padding: 30px 10px;
+	margin: 30px;
 }
 
 .developer img {
@@ -209,12 +243,11 @@ main {
 .footer-main {
 	display: flex;
 	justify-content: space-around;
-	padding-top: 2rem;
 	padding-bottom: 3rem;
 }
 
 .map {
-	margin: 1rem;
+	margin-left: 15px;
 }
 
 .map p {
@@ -230,12 +263,13 @@ main {
 }
 
 .contact-form {
-	display: block;
-	margin: 1rem
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .contact-form p {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	color: #767676;
 }
@@ -243,28 +277,28 @@ main {
 .contact-form .message {
 	background-color: rgb(239, 239, 239);
 	width: 100%;
-	max-width: 740px;
-	height: 235px;
+	padding-bottom: 235px;
 	border: 1px gray solid;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	padding-bottom: 180px;
-	padding-left: 2rem;
+	text-align: top;
 }
 
 .contact-form .email-place {
-	width: 100%;
-	max-width: 740px;
-	height: 60px;
+	padding-bottom: 60px;
 	background-color: rgb(239, 239, 239); 
 	margin-top: 1rem;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	padding-left: 2rem;
 	border: 1px gray solid;
 }
+form {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;	
+}
 
-form button {
+form .submit-btn {
 	padding: 1rem 6rem;
 	padding-bottom: 1rem;
 	border: 2px #fff solid; 
@@ -287,7 +321,7 @@ form button {
 }
 
 .adress p {
-	color: rgb(110, 110, 110);
+	color: rgb(173, 173, 173);
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -295,12 +329,20 @@ form button {
 }
 
 .copyright p {
-	color: rgb(110, 110, 110);
+	color: rgb(173, 173, 173);
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 0.7rem;
 }
+
+@media screen and (max-width: 767px) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	}
 
 @media screen and (max-width: 520px) {
   .works {
@@ -412,4 +454,160 @@ form button {
 	.header-intro {
 		height: 330px;
 	}
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+}
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
