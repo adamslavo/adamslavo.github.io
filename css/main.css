@@ -304,7 +304,8 @@ form {
 	border: 2px #fff solid; 
 	outline-style: none;
 	background-color: rgb(88, 130, 153);
-	font-family: 'Montserrat', sans-serif;	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
 	font-weight: 700;
 	color: #fff;
 	font-size: 1.5rem;
