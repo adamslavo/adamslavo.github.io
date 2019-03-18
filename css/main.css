@@ -168,6 +168,10 @@ main {
 
 .works img {
 	padding: 2rem;
+	transition: 1s;
+}
+.works img:hover {
+	transform: scale(1.2);
 }
 
 .team {
